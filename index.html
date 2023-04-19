@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de decimal para binário com JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Decimal para Binário com JavaScript</h1>
+        <div class="input_container">
+            <input type="text" onchange="converter(this.value)"  >
+        </div>
+        <div class="out_container">
+            <h1 id="res" >0</h1>
+        </div>
+    </div>
+    <script>
+        function converter (num){
+            var dec = parseInt(num)
+            var bin = dec.toString(2)
+            document.getElementById("res").innerText=bin
+        }
+    </script>
+</body>
+</html>
